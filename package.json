@@ -1,7 +1,6 @@
 {
   "name": "cli",
   "version": "1.0.0",
-  "type": "module",
   "main": "index.js",
   "bin": {
     "cli": "./bin/cli.js"
@@ -11,9 +10,9 @@
   },
   "lint-staged": {
     "*.md": "prettier --write",
-    "*.{ts,tsx,js,vue,less}": "prettier --write",
-    "*.{ts,tsx,js,vue}": "eslint --fix",
-    "*.{vue,css,less}": "stylelint --fix"
+    "src/**/*.{ts,tsx,js,vue,less}": "prettier --write ",
+    "src/**/*.{ts,tsx,js,vue}": "eslint --fix",
+    "src/**/*.{vue,css,less}": "stylelint --fix"
   },
   "devDependencies": {
     "eslint": "^8.2.0",
@@ -26,5 +25,6 @@
   "dependencies": {
     "commander": "^8.3.0",
     "consola": "^2.15.3"
-  }
+  },
+  "author": "Mr.shen"
 }

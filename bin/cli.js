@@ -1,12 +1,12 @@
 #! /usr/bin/env node
 import { Command } from "commander"
-import commitLint from "./commands/commit-lint.js"
+// import commitLint from "./commands/commit-lint.js"
 import create from "./commands/create.js"
 
 const program = new Command();
 // 版本
 program
-    .version(`cli@ 1.0.2`)
+    .version(`cli@ 1.0.4`)
     .usage(`<command> [options]`)
 
 // 创建项目
@@ -18,9 +18,9 @@ program
 
 
 //  commit提交格式化验证 
-program
-    .command('commit-lint <gitParams>')
-    .description('Lint commit message')
-    .action(commitLint);
+// program
+//     .command('commit-lint <gitParams>')
+//     .description('Lint commit message')
+//     .action(commitLint);
 
 program.parse();

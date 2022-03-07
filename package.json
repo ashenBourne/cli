@@ -1,22 +1,12 @@
 {
   "name": "@aliushen/cli",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "index.js",
   "bin": {
-    "cli": "./bin/cli.js"
+    "cli": "./bin/cli.js",
+    "show-info": "./bin/test.js"
   },
   "type": "module",
-  "lint-staged": {
-    "*.md": "prettier --write",
-    "src/**/*.{ts,tsx,js,vue,less}": "prettier --write ",
-    "src/**/*.{vue,css,less}": "stylelint --fix"
-  },
-  "devDependencies": {
-    "lint-staged": "^12.1.2",
-    "prettier": "^2.5.0",
-    "rimraf": "^3.0.2",
-    "stylelint": "^13.13.1"
-  },
   "dependencies": {
     "axios": "^0.26.0",
     "commander": "^8.3.0",

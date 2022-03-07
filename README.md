@@ -11,6 +11,6 @@
 
 ## cli命令
 
-cli、 --version   //版本
+cli --version   //版本
 
 cli create [name]   //创建

@@ -1,5 +1,5 @@
 {
-  "name": "cli",
+  "name": "@aliushen/cli",
   "version": "1.0.2",
   "main": "index.js",
   "bin": {
@@ -26,5 +26,6 @@
     "inquirer": "^8.2.0",
     "ora": "^6.1.0"
   },
-  "author": "Mr.shen"
+  "author": "Mr.shen",
+  "license": "MIT"
 }

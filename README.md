@@ -1,10 +1,16 @@
 ## 目的
 新建一个 cli 工具，熟悉下各种工具的使用，为了以后开发 ui-cli 做努力
 
-## link
+## npm link
 
-使用link进行全局链接：以下为固定命令，
->#! /usr/bin/env node           
+开发状态下使用npm link进行全局链接：
+>npm link   
+>npm unlink name    //去除链接
 
-## 测试下githook
+>#! /usr/bin/env node  //使用node解析         
 
+## cli命令
+
+cli、 --version   //版本
+
+cli create [name]   //创建

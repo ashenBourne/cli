@@ -1,15 +1,12 @@
+#! /usr/bin/env node
 import { Command } from "commander"
 import commitLint from "./commands/commit-lint.js"
 import create from "./commands/create.js"
-import fs from "fs"
-import path from "path"
 
-let res = fs.readFileSync(path.join(process.cwd(), '/package.json'), 'utf-8')
-let info = JSON.parse(res)
 const program = new Command();
 // 版本
 program
-    .version(`cli@ ${info.version}`)
+    .version(`cli@ 1.0.2`)
     .usage(`<command> [options]`)
 
 // 创建项目

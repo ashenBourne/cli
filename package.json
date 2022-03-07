@@ -6,16 +6,12 @@
     "cli": "./bin/cli.js"
   },
   "type": "module",
-  "scripts": {
-    "prepare": "husky install"
-  },
   "lint-staged": {
     "*.md": "prettier --write",
     "src/**/*.{ts,tsx,js,vue,less}": "prettier --write ",
     "src/**/*.{vue,css,less}": "stylelint --fix"
   },
   "devDependencies": {
-    "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.0",
     "rimraf": "^3.0.2",
